@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../css/Hero.css';
 
 function Hero() {
@@ -6,7 +7,9 @@ function Hero() {
       <div className="hero-content">
         <h1>Welcome to My Portfolio</h1>
         <p></p>
-        <button>Enter</button>
+        <Link to="/about">
+          <button>Enter</button>
+        </Link>  
       </div>
     </div>
   );
