@@ -1,5 +1,4 @@
 {
-  "homepage": "http://somphangchanleuxay.github.io/MyPortfoliowithReact",
   "name": "myportfoliowithreact20",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +8,7 @@
     "start-vite": "vite",
     "build": "vite build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
