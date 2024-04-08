@@ -11,7 +11,7 @@ function About() {
         <h2>About Page</h2>
         <p>
           <strong>About Me</strong><br />
-          Hey there! I'm [Your Name], currently diving into the world of coding through the Minnesota University coding bootcamp. It's been a whirlwind of learning, but I'm loving every bit of it and hungry for more.<br /><br />
+          Hey there! I'm Pang, currently diving into the world of coding through the Minnesota University coding bootcamp. It's been a whirlwind of learning, but I'm loving every bit of it and hungry for more.<br /><br />
           
           <strong>What I've Been Up To</strong><br />
           In the bootcamp, we've covered a ton of ground – from wrangling with JavaScript and crafting cool interfaces with CSS and HTML, to building dynamic web apps using React and Node.js. I've even dipped my toes into databases with SQL, MongoDB, and GraphQL, and got my head around server-side APIs and object-oriented programming.<br /><br />
@@ -36,15 +36,18 @@ const containerStyle = {
   border: '2px solid #ccc',
   borderRadius: '5px',
   padding: '20px',
+  marginTop: '300px'
+  
 };
 
 const imageContainerStyle = {
-  flex: '1',
+ 
 };
 
 const imageStyle = {
   width: '100%', 
-  borderRadius: '50%', 
+  borderRadius: '10%', 
+  
 };
 
 const textContainerStyle = {

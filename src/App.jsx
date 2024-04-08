@@ -3,6 +3,9 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,7 +16,10 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path ="/contact" element={<Contact />} />
+          <Route path ="/Resume" element={<Resume />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

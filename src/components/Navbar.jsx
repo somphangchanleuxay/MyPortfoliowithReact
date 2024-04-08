@@ -1,7 +1,6 @@
 import { Flex, Link } from '@chakra-ui/react';
-import { Link as RouterLink } from 'react-router-dom'; // Import Link from React Router
-import logo from '../assets/images/78-781773_kawaii-cute-anime-stiker-kawaii-anime-png-transparent.png';
-import { useEffect, useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom'; 
+import logo from '../assets/images/tenor.gif';
 
 function Navbar() {
   const linkStyles = {
@@ -14,46 +13,33 @@ function Navbar() {
     color: '#fff',
   };
 
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <>
-      <Flex
-        as="nav"
-        align="center"
-        justify="space-between"
-        padding="1rem"
-        backgroundColor="teal.500"
-        color="white"
-        position="fixed"
-        top="0"
-        left="0"
-        right="0"
-        zIndex="999"
-      >
-        <Link as={RouterLink} to="/" style={linkStyles}> {/* Link to the home page */}
-          <img src={logo} alt="Logo" height="70px" />
-        </Link>
-        <Flex as="ul" listStyleType="none" gap={4}>
-          <Link as={RouterLink} to="/about" style={linkStyles}>About Me</Link> {/* Link to the About page */}
-          <Link as={RouterLink} to="/portfolio" style={linkStyles}>Portfolio</Link> {/* Link to the Portfolio page */}
-          <Link as={RouterLink} to="/contact" style={linkStyles}>Contact</Link> {/* Link to the Contact page */}
-          <Link as={RouterLink} to="/resume" style={linkStyles}>Resume</Link> {/* Link to the Resume page */}
-        </Flex>
+    <Flex
+      as="nav"
+      align="center"
+      justify="space-between"
+      padding="1rem"
+      bg="linear-gradient(45deg, #00FF00, #0000FF, #FF69B4)" 
+      color="white"
+      position="fixed"
+      top="0"
+      left="0"
+      right="0"
+      zIndex="999"
+      width="100%"
+      flexDirection="row" // Default direction is row
+      flexWrap="wrap" // Allow items to wrap to the next line if necessary
+    >
+      <Link as={RouterLink} to="/" style={linkStyles}>
+        <img src={logo} alt="Logo" height="100px" />
+      </Link>
+      <Flex as="ul" listStyleType="none" gap={4}>
+        <Link as={RouterLink} to="/about" style={linkStyles}>About Me</Link>
+        <Link as={RouterLink} to="/portfolio" style={linkStyles}>Portfolio</Link>
+        <Link as={RouterLink} to="/contact" style={linkStyles}>Contact</Link>
+        <Link as={RouterLink} to="/resume" style={linkStyles}>Resume</Link>
       </Flex>
-    </>
+    </Flex>
   );
 }
 
