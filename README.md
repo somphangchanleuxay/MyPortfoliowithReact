@@ -46,6 +46,12 @@ To run this portfolio locally on your machine, follow these steps:
 
 Once the portfolio is running locally or deployed, you can navigate through different projects displayed on the portfolio. Each project card provides details about the project, including its title, description, GitHub repository link, and, if available, a link to the deployed application.
 
+Screenshots of Page 
+![ScreenShot](./src/assets/images/Screenshot%202024-04-08%20113419.png)
+![ScreenShot](./src/assets/images/Screenshot%202024-04-08%20170939.png)
+![ScreenShot](./src/assets/images/Screenshot%202024-04-08%20171008.png)
+![ScreenShot](./src/assets/images/Screenshot%202024-04-08%20171015.png)
+
 ### Technologies Used
 
 This portfolio is built using the following technologies:
