@@ -4,7 +4,7 @@ function About() {
   return (
     <div style={containerStyle}>
       <div style={imageContainerStyle}>
-        <img src="../src/assets/images/IMG_3807.JPG" alt="Picture of Somphang Chanleuxay" style={imageStyle} />
+        <img src="/IMG_3807.JPG" alt="Picture of Somphang Chanleuxay" style={imageStyle} />
       </div>
       <div style={textContainerStyle}>
         <h2>About Page</h2>
